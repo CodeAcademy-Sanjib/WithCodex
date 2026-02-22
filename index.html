@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator-app">
+    <section class="calculator" aria-label="Smart calculator">
+      <header class="top-bar">
+        <h1>Smart Calculator</h1>
+        <button id="themeToggle" class="ghost-btn" aria-label="Toggle dark mode">🌙</button>
+      </header>
+
+      <div class="display-wrap">
+        <label for="expressionInput" class="visually-hidden">Expression</label>
+        <input id="expressionInput" type="text" inputmode="decimal" autocomplete="off" placeholder="Type an expression e.g. (12 + 4) / 2" />
+        <div class="result-line">
+          <span>Result</span>
+          <strong id="resultOutput">0</strong>
+        </div>
+      </div>
+
+      <div class="memory-row">
+        <button data-action="mc">MC</button>
+        <button data-action="mr">MR</button>
+        <button data-action="mplus">M+</button>
+        <button data-action="mminus">M-</button>
+      </div>
+
+      <div class="keypad" role="group" aria-label="Calculator keys">
+        <button data-value="sin(" class="fn">sin</button>
+        <button data-value="cos(" class="fn">cos</button>
+        <button data-value="tan(" class="fn">tan</button>
+        <button data-value="sqrt(" class="fn">√</button>
+
+        <button data-value="log(" class="fn">log</button>
+        <button data-value="ln(" class="fn">ln</button>
+        <button data-value="PI" class="fn">π</button>
+        <button data-value="E" class="fn">e</button>
+
+        <button data-value="(">(</button>
+        <button data-value=")">)</button>
+        <button data-value="%">%</button>
+        <button data-action="clear" class="warn">C</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="/" class="operator">÷</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="*" class="operator">×</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="-" class="operator">−</button>
+
+        <button data-value="0" class="wide">0</button>
+        <button data-value=".">.</button>
+        <button data-value="+" class="operator">+</button>
+
+        <button data-action="delete">⌫</button>
+        <button data-action="equals" class="equals wide">=</button>
+      </div>
+
+      <p class="hint">Keyboard: Enter (=), Backspace (delete), Esc (clear).</p>
+    </section>
+
+    <aside class="history-panel" aria-label="Calculation history">
+      <div class="history-head">
+        <h2>History</h2>
+        <button id="clearHistory" class="ghost-btn">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
