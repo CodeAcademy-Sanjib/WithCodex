@@ -59,9 +59,15 @@ Use Live Server in VS Code.
 
 ## 📸 Screenshot
 
-(Add a screenshot of your calculator UI here)
+<img width="1261" height="846" alt="image" src="https://github.com/user-attachments/assets/b6ed3b06-7334-46d2-b219-042526ce1d98" />
+
+
 
 ---
+## 🌐 Live Demo
+
+https://codeacademy-sanjib.github.io/WithCodex/
+----
 
 ## 📈 Learning Outcome
 
