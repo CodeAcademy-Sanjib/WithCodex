@@ -25,11 +25,8 @@ This project demonstrates clean UI design, expression parsing, and real-time cal
 ---
 
 ## 📂 Project Structure
-smart-calculator/
-│
-├── index.html # Main structure
-├── styles.css # Styling
-└── script.js # Calculator logic
+<img width="345" height="174" alt="image" src="https://github.com/user-attachments/assets/1f102810-7353-4c4a-a9c1-cede91e7228a" />
+
 ---
 
 
